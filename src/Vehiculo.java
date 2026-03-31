@@ -24,6 +24,24 @@ public class Vehiculo {
         this.duenio = new Duenio(nombreDuenio,telefonoDuenio,cedulaDuenio);
     }
 
+    public Vehiculo(String marca, String modelo, String placa,
+                    int numRuedas, double cilindraje, double torque, int tipoCombustible,
+                    Duenio duenio){
+        this.marca = marca;
+        this.modelo = modelo;
+        this.placa = placa;
+        this.numRuedas = numRuedas;
+        this.cilindraje = cilindraje;
+        this.torque = torque;
+        this.tipoCombustible = tipoCombustible;
+        this.duenio = duenio;
+    }
+
+    public Vehiculo(){
+
+    }
+
+
     double aceleracion(){
         double acc;
         if(tipoCombustible==1){
@@ -34,15 +52,67 @@ public class Vehiculo {
         return acc;
     }
 
-    void informacion(){
-        System.out.println("Información Vehículo:");
-        System.out.println("Marca: " + marca);
-        System.out.println("Modelo: " + modelo);
-        System.out.println("Placa: " + placa);
-        System.out.println("Numero Ruedas: " + numRuedas);
+    public String getMarca() {
+        return marca;
     }
 
-    public void informacionDuenio(){
-        this.duenio.informacion();
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public String getPlaca() {
+        return placa;
+    }
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+
+    public int getNumRuedas() {
+        return numRuedas;
+    }
+
+    public void setNumRuedas(int numRuedas) {
+        this.numRuedas = numRuedas;
+    }
+
+    public double getCilindraje() {
+        return cilindraje;
+    }
+
+    public void setCilindraje(double cilindraje) {
+        this.cilindraje = cilindraje;
+    }
+
+    public double getTorque() {
+        return torque;
+    }
+
+    public void setTorque(double torque) {
+        this.torque = torque;
+    }
+
+    public int getTipoCombustible() {
+        return tipoCombustible;
+    }
+
+    public void setTipoCombustible(int tipoCombustible) {
+        this.tipoCombustible = tipoCombustible;
+    }
+
+    public Duenio getDuenio() {
+        return duenio;
+    }
+
+    public void setDuenio(Duenio duenio) {
+        this.duenio = duenio;
     }
 }

@@ -11,10 +11,32 @@ public class Duenio {
         this.cedula = cedula;
     }
 
-    public void informacion(){
-        System.out.println("Información Dueño:");
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Teléfono: " + telefono);
-        System.out.println("Cedula: " + cedula);
+    public Duenio(Duenio duenio){
+        this.nombre = duenio.nombre;
+        this.cedula = duenio.cedula;
+    }
+
+   public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    public int getCedula() {
+        return cedula;
+    }
+
+    public void setCedula(int cedula) {
+        this.cedula = cedula;
     }
 }
