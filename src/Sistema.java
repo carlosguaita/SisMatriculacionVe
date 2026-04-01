@@ -55,7 +55,7 @@ public class Sistema {
         System.out.println("Información Vehículo:");
         System.out.println("Marca: " + vehiculo.getMarca());
         System.out.println("Modelo: " + vehiculo.getModelo());
-        System.out.println("Placa: " + vehiculo.getMarca());
+        System.out.println("Placa: " + vehiculo.getPlaca());
         System.out.println("Numero Ruedas: " + vehiculo.getNumRuedas());
         System.out.println("Cilindraje: " + vehiculo.getCilindraje());
         System.out.println("Torque: " + vehiculo.getTorque());
@@ -68,6 +68,31 @@ public class Sistema {
         System.out.println("La aceleración del vehículo es: " + accV);
     }
 
+
+    public void actualizarVehiculo(Vehiculo vehiculo){
+        System.out.println("Actualizar Información Vehículo:");
+        System.out.print("Marca (" + vehiculo.getMarca() + "): ");
+        String marca  = sc.next();
+        vehiculo.setMarca(marca);
+        System.out.print("Modelo (" + vehiculo.getModelo() + "): ");
+        String modelo  = sc.next();
+        vehiculo.setModelo(modelo);
+        System.out.print("Placa (" + vehiculo.getMarca() + "): ");
+        String placa = sc.next();
+        vehiculo.setPlaca(placa);
+        System.out.print("Numero Ruedas (" + vehiculo.getNumRuedas() + "): ");
+        int numRuedas = sc.nextInt();
+        vehiculo.setNumRuedas(numRuedas);
+        System.out.print("Cilindraje (" + vehiculo.getCilindraje() + "): ");
+        double cilindraje = sc.nextDouble();
+        vehiculo.setCilindraje(cilindraje);
+        System.out.print("Torque (" + vehiculo.getTorque() + "): ");
+        double torque = sc.nextDouble();
+        vehiculo.setTorque(torque);
+        System.out.print("Combustible (" + (vehiculo.getTipoCombustible()==1 ? "Gasolina" : "Diesel") + ") 1.Gadolina/2.Diesel: ");
+        int tipoCombustible = sc.nextInt();
+        vehiculo.setTipoCombustible(tipoCombustible);
+    }
 
 
 }

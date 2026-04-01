@@ -11,10 +11,15 @@ public class Main {
         sis.imprimirVehiculo(v1);
         sis.imprimirAceleracion(v1);
 
+        System.out.println("-------------Actualización--------------");
+        sis.actualizarVehiculo(v1);
+        sis.imprimirVehiculo(v1);
+
+        /*
         Vehiculo v2 = sis.crearVehiculo();
         sis.imprimirVehiculo(v2);
         sis.imprimirAceleracion(v2);
-
+        */
 
     }
 }
