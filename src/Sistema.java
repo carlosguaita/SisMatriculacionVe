@@ -13,6 +13,20 @@ public class Sistema {
         br = new BufferedReader(new InputStreamReader(System.in));
     }
 
+    public static int menu(){
+        Scanner sc = new Scanner(System.in);
+        int opc;
+        System.out.println("Seleccione una opcion:");
+        System.out.println("1.Crear vehículo");
+        System.out.println("2.Actualizar vehículo");
+        System.out.println("3.Información del vehículo");
+        System.out.println("4.Ver aceleración del vehículo");
+        System.out.println(">> ");
+        opc = sc.nextInt();
+        return opc;
+    }
+
+
     public Vehiculo crearVehiculo() {
         System.out.println("Ingrese los datos del vehículo:");
         System.out.print("Marca: ");
