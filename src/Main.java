@@ -8,6 +8,12 @@ public class Main {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
+
+        SistemaGUI sis = new SistemaGUI();
+        sis.setSize(600,400);
+        sis.setVisible(true);
+
+       /*
         Sistema sis = new Sistema();
 
         //Vehiculo[] vehiculos = new Vehiculo[5];
@@ -45,6 +51,8 @@ public class Main {
             System.out.print("Desea seleccionar otra opcion 1.Si/2.No: ");
             opc2 = sc.nextInt();
         }while(opc2 == 1);
-
+    */
     }
+
+
 }

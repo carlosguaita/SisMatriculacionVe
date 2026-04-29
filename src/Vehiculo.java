@@ -37,6 +37,13 @@ public class Vehiculo {
         this.duenio = duenio;
     }
 
+    public Vehiculo(String marca, String modelo, String placa, Duenio duenio) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.placa = placa;
+        this.duenio = duenio;
+    }
+
     public Vehiculo(){
 
     }
@@ -65,7 +72,12 @@ public class Vehiculo {
 
     @Override
     public String toString(){
-        return "El vehículo tiene las placas: " + this.placa;
+
+        return "Placa: " + this.placa + " " +
+                "Modelo: " + this.modelo + " " +
+                "Marca: " + this.marca +
+                "Nombre Dueño: "+ this.duenio.getNombre() +
+                "Cedula: " + this.duenio.getCedula() + '\n';
     }
 
     public String getMarca() {
